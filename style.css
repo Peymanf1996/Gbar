@@ -1,6 +1,858 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
-:root{--cream:#f5f0e8;--paper:#fbf9f5;--ink:#24211f;--muted:#77716a;--rose:#a65d65;--line:rgba(36,33,31,.17);--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.site-header{position:absolute;z-index:10;top:0;left:0;width:100%;height:94px;padding:0 7.2%;display:flex;align-items:center;justify-content:space-between;color:#fff;border-bottom:1px solid rgba(255,255,255,.18)}.brand{display:flex;flex-direction:column;align-items:center;line-height:1}.brand>span{font-family:var(--serif);font-size:31px;letter-spacing:-1.5px}.brand-x{font-size:.65em;vertical-align:14%;padding:0 2px}.brand small{font-size:9px;letter-spacing:4px;margin-top:8px;padding-left:4px}.main-nav{display:flex;gap:31px;align-items:center}.main-nav a{font-size:11px;color:rgba(255,255,255,.83);position:relative;transition:opacity .2s}.main-nav a:hover,.main-nav a.active{color:#fff}.main-nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:1px;background:#fff}.header-actions{display:flex;align-items:center;gap:25px;font-size:11px}.location{white-space:nowrap}.button{min-height:47px;padding:0 22px;display:inline-flex;align-items:center;justify-content:center;gap:23px;border:1px solid transparent;border-radius:99px;font-size:11px;font-weight:600;transition:transform .25s,background .25s}.button:hover{transform:translateY(-2px)}.button span{font-size:17px;font-weight:400}.button-light{background:var(--cream);color:var(--ink)}.button-light:hover{background:#fff}.button-small{min-height:40px;padding:0 18px;gap:14px}.menu-toggle{display:none}.hero{height:min(780px,94vh);min-height:640px;position:relative;display:flex;align-items:center;color:white;background:#54473c;overflow:hidden}.hero-image{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=2200&q=88');background-size:cover;background-position:center 38%;transform:scale(1.015)}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,20,17,.68) 0%,rgba(24,20,17,.35) 43%,rgba(24,20,17,.06) 76%),linear-gradient(0deg,rgba(20,17,15,.28),transparent 24%)}.hero-content{position:relative;z-index:1;margin-left:7.8%;padding-top:58px;max-width:590px}.eyebrow{font-size:9px;letter-spacing:1.7px;font-weight:600;margin:0 0 18px;color:#655e56}.eyebrow.light{color:rgba(255,255,255,.76)}h1,h2,h3,p{margin-top:0}h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-1.6px}h1{font-size:clamp(52px,6.2vw,86px);line-height:1.02;margin-bottom:22px}h1 em,h2 em{font-weight:400} .hero-copy{font-size:14px;line-height:1.8;color:rgba(255,255,255,.9);margin-bottom:27px}.hero-index{display:flex;gap:22px;margin-top:44px;font-size:10px;color:rgba(255,255,255,.66)}.hero-index span{padding-bottom:9px}.hero-index .index-active{color:#fff;border-bottom:1px solid #fff}.hero-side-note{position:absolute;right:7.4%;bottom:19%;font-size:9px;letter-spacing:1.5px;line-height:1.9;border-left:1px solid white;padding-left:17px}.hero-caption{position:absolute;bottom:30px;right:7.4%;font-size:8px;letter-spacing:2px;color:rgba(255,255,255,.75)}.section-pad{padding:70px 7.8% 46px}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px}.section-heading h2,.salon-copy h2,.booking h2{font-size:clamp(31px,3.2vw,43px);line-height:1.12;margin:0}.section-heading .eyebrow{margin-bottom:12px}.text-link{font-size:10px;font-weight:600;display:inline-flex;align-items:center;gap:15px;border-bottom:1px solid #8c847b;padding-bottom:6px;white-space:nowrap}.text-link span{font-size:16px;font-weight:400}.service-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.service-photo{display:block;width:100%;aspect-ratio: .82;background-size:cover;background-position:center;transition:filter .3s,transform .4s;overflow:hidden}.service-photo:hover{filter:saturate(.85);transform:translateY(-3px)}.photo-hair{background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=650&q=80')}.photo-nails{background-image:url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=650&q=80')}.photo-makeup{background-image:url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=650&q=80')}.photo-brows{background-image:url('https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=650&q=80')}.photo-face{background-image:url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=650&q=80')}.service-meta{display:flex;justify-content:space-between;align-items:center;margin-top:13px}.service-meta h3{font-family:var(--serif);font-size:17px;font-weight:400;margin:0}.service-meta>span{font-size:8px;color:#9a9289}.service-card>p{font-size:10px;color:var(--muted);line-height:1.6;margin:7px 0 13px}.service-foot{display:flex;align-items:center;gap:7px;font-size:9px;color:#5f5952;border-top:1px solid var(--line);padding-top:11px}.service-foot .dot{color:#b5aaa0}.service-foot a{margin-left:auto;font-size:17px;line-height:1}.price-note{font-size:9px;color:#8a837b;margin:22px 0 0}.salon{display:grid;grid-template-columns:1.12fr 1fr .82fr;background:#f0ebe3;align-items:stretch}.salon-photo{min-height:365px;background:url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1200&q=85') center/cover}.salon-copy{padding:55px 12% 45px 11%;align-self:center}.salon-copy .eyebrow{margin-bottom:14px}.salon-copy h2{font-size:clamp(27px,2.7vw,37px);letter-spacing:-1px}.body-copy{font-size:11px;line-height:1.9;color:#6e675f;margin:21px 0 23px;max-width:380px}.salon-benefits{padding:40px 15% 35px 5%;display:flex;flex-direction:column;justify-content:center}.benefit{display:flex;align-items:center;gap:17px;padding:17px 0;border-bottom:1px solid var(--line)}.benefit:last-child{border-bottom:0}.benefit-icon{width:28px;font-size:24px;text-align:center;font-weight:300}.benefit h3{font-size:10px;font-weight:600;margin:0 0 7px}.benefit p{font-size:9px;color:var(--muted);margin:0}.booking{min-height:300px;display:grid;grid-template-columns:.7fr 1.6fr .8fr;background:#211d1a;color:#fff;align-items:stretch}.booking-photo{background:url('https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=900&q=80') center/cover;min-height:300px}.booking-content{padding:48px 20px;text-align:center;align-self:center}.booking-content .eyebrow{margin-bottom:13px}.booking h2{font-size:37px}.booking-content>p:not(.eyebrow){font-size:11px;color:#c7bfb6;margin:14px 0 20px}.booking-contact{padding:55px 12% 30px 7%;align-self:center}.booking-contact .eyebrow{margin-bottom:20px}.booking-contact p:not(.eyebrow){font-size:11px;margin-bottom:15px}.booking-contact>a{font-size:10px;color:#c7bfb6;border-bottom:1px solid #6d6259;padding-bottom:5px}footer{padding:34px 7.8% 24px;display:flex;align-items:center;gap:35px;flex-wrap:wrap;background:var(--paper)}.brand-footer{color:var(--ink)}.brand-footer>span{font-size:25px}footer>p{font-family:var(--serif);font-size:15px;color:#77716a;margin:0}.footer-links{display:flex;gap:22px;margin-left:auto}.footer-links a{font-size:10px;color:#655e56}.copyright{width:100%;border-top:1px solid var(--line);padding-top:17px;color:#938b82;font-size:9px}
-@media(max-width:1050px){.site-header{padding:0 5%}.main-nav{gap:17px}.header-actions{gap:14px}.section-pad{padding-left:5%;padding-right:5%}.service-grid{gap:12px}.service-meta h3{font-size:15px}.service-foot{gap:5px;font-size:8px}.salon{grid-template-columns:1fr 1fr}.salon-photo{min-height:330px}.salon-benefits{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr);padding:10px 7% 25px;column-gap:35px}.benefit:nth-child(2){border-bottom:1px solid var(--line)}.booking{grid-template-columns:.6fr 1.4fr .8fr}.booking-contact{padding-right:6%}}
-@media(max-width:760px){.site-header{height:76px;padding:0 6%;background:rgba(29,25,22,.2)}.brand>span{font-size:27px}.header-actions .location{display:none}.header-actions .button{min-height:37px;padding:0 14px;font-size:10px}.menu-toggle{display:flex;flex-direction:column;gap:5px;border:0;background:transparent;padding:10px;margin-left:auto;margin-right:12px;order:3}.menu-toggle span{display:block;width:22px;height:1px;background:#fff}.main-nav{display:none;position:absolute;top:76px;left:0;right:0;padding:22px 6% 27px;background:#26211e;flex-direction:column;align-items:flex-start;gap:22px}.main-nav.open{display:flex}.main-nav a{font-size:13px}.main-nav a.active:after{bottom:-5px}.header-actions{order:2}.hero{min-height:680px;height:88svh;max-height:820px;align-items:flex-end}.hero-image{background-position:58% center}.hero-shade{background:linear-gradient(90deg,rgba(20,17,15,.66),rgba(20,17,15,.14)),linear-gradient(0deg,rgba(20,17,15,.48),transparent 70%)}.hero-content{margin:0;padding:0 6% 55px;max-width:100%}h1{font-size:clamp(48px,12vw,70px);margin-bottom:19px}.hero-copy{font-size:12px}.hero-index{margin-top:30px}.hero-side-note{display:none}.hero-caption{right:6%;bottom:25px;font-size:7px}.section-pad{padding:52px 6% 32px}.section-heading{align-items:flex-end;gap:15px}.section-heading h2{font-size:32px}.section-heading .text-link{font-size:9px;gap:6px}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 13px}.service-card:last-child{grid-column:1/-1;max-width:calc(50% - 6px)}.service-meta h3{font-size:17px}.service-card>p{font-size:10px}.service-foot{font-size:9px}.salon{grid-template-columns:1fr}.salon-photo{min-height:270px}.salon-copy{padding:38px 7% 35px}.salon-copy h2{font-size:34px}.body-copy{font-size:12px}.salon-benefits{grid-column:auto;padding:0 7% 25px;display:flex}.benefit{width:100%}.booking{grid-template-columns:1fr}.booking-photo{min-height:185px;max-height:220px}.booking-content{padding:36px 6% 30px}.booking h2{font-size:34px}.booking-contact{padding:15px 7% 35px;text-align:center}.booking-contact .eyebrow{margin-bottom:12px}footer{padding:30px 6% 20px;gap:20px}footer>p{font-size:13px}.footer-links{order:3;width:100%;margin-left:0;justify-content:space-between}.copyright{margin-top:4px}}
-@media(max-width:380px){.header-actions .button{gap:6px;padding:0 10px}.brand>span{font-size:24px}.section-heading{display:block}.section-heading .text-link{margin-top:17px}.service-grid{gap:22px 10px}.service-foot{font-size:8px}.service-meta h3{font-size:15px}}
+:root{
+    --cream:#f5f0e8;
+    --paper:#fbf9f5;
+    --ink:#24211f;
+    --muted:#77716a;
+    --rose:#a65d65;
+    --line:rgba(36,33,31,.17);
+    --serif:'Playfair Display',Georgia,serif;
+    --sans:'DM Sans',Arial,sans-serif
+}
+*{
+    box-sizing:border-box
+}
+html{
+    scroll-behavior:smooth;scroll-padding-top:90px
+}
+body{
+    margin:0;background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:14px;
+    -webkit-font-smoothing:antialiased
+}
+a{
+    color:inherit;
+    text-decoration:none
+}
+.site-header{
+    position:absolute;
+    z-index:10;
+    top:0;
+    left:0;
+    width:100%;
+    height:94px;
+    padding:0 7.2%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#fff;
+    border-bottom:1px solid rgba(255,255,255,.18)
+}
+.brand{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    line-height:1
+}
+.brand>span{
+    font-family:var(--serif);
+    font-size:31px;
+    letter-spacing:-1.5px
+}
+.brand-x{
+    font-size:.65em;
+    vertical-align:14%;
+    padding:0 2px
+}
+.brand small{
+    font-size:9px;
+    letter-spacing:4px;
+    margin-top:8px;
+    padding-left:4px
+}
+.main-nav{
+    display:flex;
+    gap:31px;
+    align-items:center
+}
+.main-nav a{
+    font-size:11px;
+    color:rgba(255,255,255,.83);
+    position:relative;
+    transition:opacity .2s
+}
+.main-nav a:hover,.main-nav a.active{
+    color:#fff
+}
+.main-nav a.active:after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-10px;
+    height:1px;
+    background:#fff
+}
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    font-size:11px
+}
+.location{
+    white-space:nowrap
+}
+.button{
+    min-height:47px;
+    padding:0 22px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:23px;
+    border:1px solid transparent;
+    border-radius:99px;
+    font-size:11px;
+    font-weight:600;
+    transition:transform .25s,background .25s
+}
+.button:hover{
+    transform:translateY(-2px)
+}
+.button span{
+    font-size:17px;
+    font-weight:400
+}
+.button-light{
+    background:var(--cream);
+    color:var(--ink)
+}
+.button-light:hover{
+    background:#fff
+}
+.button-small{
+    min-height:40px;
+    padding:0 18px;
+    gap:14px
+}
+.menu-toggle{
+    display:none
+}
+.hero{
+    height:min(780px,94vh);
+    min-height:640px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    color:white;
+    background:#54473c
+    overflow:hidden
+}
+.hero-image{
+    position:absolute;
+    inset:0;
+    background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=2200&q=88');
+    background-size:cover;
+    background-position:center 38%;
+    transform:scale(1.015)
+}
+.hero-shade{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,rgba(24,20,17,.68) 0%,rgba(24,20,17,.35) 43%,rgba(24,20,17,.06) 76%),linear-gradient(0deg,rgba(20,17,15,.28),transparent 24%)
+}
+.hero-content{
+    position:relative;
+    z-index:1;
+    margin-left:7.8%;
+    padding-top:58px;
+    max-width:590px
+}
+.eyebrow{
+    font-size:9px;
+    letter-spacing:1.7px;
+    font-weight:600;
+    margin:0 0 18px;
+    color:#655e56
+}
+.eyebrow.light{
+    color:rgba(255,255,255,.76)
+}
+h1,h2,h3,p{
+    margin-top:0
+}
+h1,
+h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -1.6px;
+}
+
+h1 {
+  font-size: clamp(52px, 6.2vw, 86px);
+  line-height: 1.02;
+  margin-bottom: 22px;
+}
+
+h1 em,
+h2 em {
+  font-weight: 400;
+}
+
+.hero-copy {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 27px;
+}
+
+.hero-index {
+  display: flex;
+  gap: 22px;
+  margin-top: 44px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.hero-index span {
+  padding-bottom: 9px;
+}
+
+.hero-index .index-active {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.hero-side-note {
+  position: absolute;
+  right: 7.4%;
+  bottom: 19%;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  line-height: 1.9;
+  border-left: 1px solid white;
+  padding-left: 17px;
+}
+
+.hero-caption {
+  position: absolute;
+  bottom: 30px;
+  right: 7.4%;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.section-pad {
+  padding: 70px 7.8% 46px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.section-heading h2,
+.salon-copy h2,
+.booking h2 {
+  font-size: clamp(31px, 3.2vw, 43px);
+  line-height: 1.12;
+  margin: 0;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 12px;
+}
+
+.text-link {
+  font-size: 10px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #8c847b;
+  padding-bottom: 6px;
+  white-space: nowrap;
+}
+
+.text-link span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.service-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 0.82;
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.3s, transform 0.4s;
+  overflow: hidden;
+}
+
+.service-photo:hover {
+  filter: saturate(0.85);
+  transform: translateY(-3px);
+}
+
+.photo-hair {
+  background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=650&q=80');
+}
+
+.photo-nails {
+  background-image: url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=650&q=80');
+}
+
+.photo-makeup {
+  background-image: url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=650&q=80');
+}
+
+.photo-brows {
+  background-image: url('https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=650&q=80');
+}
+
+.photo-face {
+  background-image: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=650&q=80');
+}
+
+.service-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.service-meta h3 {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.service-meta > span {
+  font-size: 8px;
+  color: #9a9289;
+}
+
+.service-card > p {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 7px 0 13px;
+}
+
+.service-foot {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 9px;
+  color: #5f5952;
+  border-top: 1px solid var(--line);
+  padding-top: 11px;
+}
+
+.service-foot .dot {
+  color: #b5aaa0;
+}
+
+.service-foot a {
+  margin-left: auto;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.price-note {
+  font-size: 9px;
+  color: #8a837b;
+  margin: 22px 0 0;
+}
+
+.salon {
+  display: grid;
+  grid-template-columns: 1.12fr 1fr 0.82fr;
+  background: #f0ebe3;
+  align-items: stretch;
+}
+
+.salon-photo {
+  min-height: 365px;
+  background: url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1200&q=85') center / cover;
+}
+
+.salon-copy {
+  padding: 55px 12% 45px 11%;
+  align-self: center;
+}
+
+.salon-copy .eyebrow {
+  margin-bottom: 14px;
+}
+
+.salon-copy h2 {
+  font-size: clamp(27px, 2.7vw, 37px);
+  letter-spacing: -1px;
+}
+
+.body-copy {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #6e675f;
+  margin: 21px 0 23px;
+  max-width: 380px;
+}
+
+.salon-benefits {
+  padding: 40px 15% 35px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.benefit:last-child {
+  border-bottom: 0;
+}
+
+.benefit-icon {
+  width: 28px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.benefit h3 {
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0 0 7px;
+}
+
+.benefit p {
+  font-size: 9px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.booking {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 0.7fr 1.6fr 0.8fr;
+  background: #211d1a;
+  color: #fff;
+  align-items: stretch;
+}
+
+.booking-photo {
+  background: url('https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=900&q=80') center / cover;
+  min-height: 300px;
+}
+
+.booking-content {
+  padding: 48px 20px;
+  text-align: center;
+  align-self: center;
+}
+
+.booking-content .eyebrow {
+  margin-bottom: 13px;
+}
+
+.booking h2 {
+  font-size: 37px;
+}
+
+.booking-content > p:not(.eyebrow) {
+  font-size: 11px;
+  color: #c7bfb6;
+  margin: 14px 0 20px;
+}
+
+.booking-contact {
+  padding: 55px 12% 30px 7%;
+  align-self: center;
+}
+
+.booking-contact .eyebrow {
+  margin-bottom: 20px;
+}
+
+.booking-contact p:not(.eyebrow) {
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.booking-contact > a {
+  font-size: 10px;
+  color: #c7bfb6;
+  border-bottom: 1px solid #6d6259;
+  padding-bottom: 5px;
+}
+
+footer {
+  padding: 34px 7.8% 24px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  background: var(--paper);
+}
+
+.brand-footer {
+  color: var(--ink);
+}
+
+.brand-footer > span {
+  font-size: 25px;
+}
+
+footer > p {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: #77716a;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+  margin-left: auto;
+}
+
+.footer-links a {
+  font-size: 10px;
+  color: #655e56;
+}
+
+.copyright {
+  width: 100%;
+  border-top: 1px solid var(--line);
+  padding-top: 17px;
+  color: #938b82;
+  font-size: 9px;
+}
+@media (max-width: 1050px) {
+  .site-header {
+    padding: 0 5%;
+  }
+
+  .main-nav {
+    gap: 17px;
+  }
+
+  .header-actions {
+    gap: 14px;
+  }
+
+  .section-pad {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .service-grid {
+    gap: 12px;
+  }
+
+  .service-meta h3 {
+    font-size: 15px;
+  }
+
+  .service-foot {
+    gap: 5px;
+    font-size: 8px;
+  }
+
+  .salon {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .salon-photo {
+    min-height: 330px;
+  }
+
+  .salon-benefits {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 7% 25px;
+    column-gap: 35px;
+  }
+
+  .benefit:nth-child(2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .booking {
+    grid-template-columns: 0.6fr 1.4fr 0.8fr;
+  }
+
+  .booking-contact {
+    padding-right: 6%;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    height: 76px;
+    padding: 0 6%;
+    background: rgba(29, 25, 22, 0.2);
+  }
+
+  .brand > span {
+    font-size: 27px;
+  }
+
+  .header-actions .location {
+    display: none;
+  }
+
+  .header-actions .button {
+    min-height: 37px;
+    padding: 0 14px;
+    font-size: 10px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 0;
+    background: transparent;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 12px;
+    order: 3;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 1px;
+    background: #fff;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    padding: 22px 6% 27px;
+    background: #26211e;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav a {
+    font-size: 13px;
+  }
+
+  .main-nav a.active:after {
+    bottom: -5px;
+  }
+
+  .header-actions {
+    order: 2;
+  }
+
+  .hero {
+    min-height: 680px;
+    height: 88svh;
+    max-height: 820px;
+    align-items: flex-end;
+  }
+
+  .hero-image {
+    background-position: 58% center;
+  }
+
+  .hero-shade {
+    background: linear-gradient(90deg, rgba(20, 17, 15, 0.66), rgba(20, 17, 15, 0.14)),
+      linear-gradient(0deg, rgba(20, 17, 15, 0.48), transparent 70%);
+  }
+
+  .hero-content {
+    margin: 0;
+    padding: 0 6% 55px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(48px, 12vw, 70px);
+    margin-bottom: 19px;
+  }
+
+  .hero-copy {
+    font-size: 12px;
+  }
+
+  .hero-index {
+    margin-top: 30px;
+  }
+
+  .hero-side-note {
+    display: none;
+  }
+
+  .hero-caption {
+    right: 6%;
+    bottom: 25px;
+    font-size: 7px;
+  }
+
+  .section-pad {
+    padding: 52px 6% 32px;
+  }
+
+  .section-heading {
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .section-heading .text-link {
+    font-size: 9px;
+    gap: 6px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 13px;
+  }
+
+  .service-card:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 6px);
+  }
+
+  .service-meta h3 {
+    font-size: 17px;
+  }
+
+  .service-card > p {
+    font-size: 10px;
+  }
+
+  .service-foot {
+    font-size: 9px;
+  }
+
+  .salon {
+    grid-template-columns: 1fr;
+  }
+
+  .salon-photo {
+    min-height: 270px;
+  }
+
+  .salon-copy {
+    padding: 38px 7% 35px;
+  }
+
+  .salon-copy h2 {
+    font-size: 34px;
+  }
+
+  .body-copy {
+    font-size: 12px;
+  }
+
+  .salon-benefits {
+    grid-column: auto;
+    padding: 0 7% 25px;
+    display: flex;
+  }
+
+  .benefit {
+    width: 100%;
+  }
+
+  .booking {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-photo {
+    min-height: 185px;
+    max-height: 220px;
+  }
+
+  .booking-content {
+    padding: 36px 6% 30px;
+  }
+
+  .booking h2 {
+    font-size: 34px;
+  }
+
+  .booking-contact {
+    padding: 15px 7% 35px;
+    text-align: center;
+  }
+
+  .booking-contact .eyebrow {
+    margin-bottom: 12px;
+  }
+
+  footer {
+    padding: 30px 6% 20px;
+    gap: 20px;
+  }
+
+  footer > p {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-actions .button {
+    gap: 6px;
+    padding: 0 10px;
+  }
+
+  .brand > span {
+    font-size: 24px;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading .text-link {
+    margin-top: 17px;
+  }
+
+  .service-grid {
+    gap: 22px 10px;
+  }
+
+  .service-foot {
+    font-size: 8px;
+  }
+
+  .service-meta h3 {
+    font-size: 15px;
+  }
+}
